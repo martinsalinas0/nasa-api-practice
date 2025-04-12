@@ -44,6 +44,9 @@ export default function SearchBar() {
           Button
         </button>
       </div>{" "}
+      <div className="container col-md-3">
+        <img src="public\logoForYouTube.jpg" alt="NASA Logo" />
+      </div>
     </div>
   );
 }
