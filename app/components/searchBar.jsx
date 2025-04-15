@@ -11,7 +11,7 @@ export default function SearchBar() {
   const handleInput = (event) => {
     const input = event.target.value.toLowerCase();
     setTerm(input);
-    onSearch(input);
+    
   };
   
   
@@ -34,18 +34,20 @@ export default function SearchBar() {
           className="form-control "
           placeholder="Search Key word here"
           value={term}
-          onChange={(e) => (e.event.target.value)}
+          onChange={handleInput}
         />
         <button
           className="btn btn-outline-secondary"
           type="button"
           id="button-addon2"
+        onClick={handleSearch}
         >
+
           Button
         </button>
       </div>{" "}
       <div className="container col-md-3">
-        <img src="public\logoForYouTube.jpg" alt="NASA Logo" />
+        <img src="C:\Users\mlees\coding\projects\nasa-api-practice\public\NASA-Logo-Large.jpg" alt="NASA Logo" />
       </div>
     </div>
   );
